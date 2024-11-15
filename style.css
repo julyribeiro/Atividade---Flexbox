@@ -1,0 +1,92 @@
+/* Importação de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Define fonte padrão */
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    margin: 0; /* Remove margens padrão */
+    box-sizing: border-box; /* Inclui padding e borda na largura e altura total do elemento */
+    border-radius: 4px; /* Bordas arredondadas padrão para elementos */
+}
+
+/* Declaração de variáveis de cor */
+:root {
+    --azul: #def1ff;
+    --verde: #cfffca;
+    --verde-esc: #beecbb;
+    --rosa: #fbd5e5;
+    --lilas: #adbce6;
+    --sombra: #b1b1b133;
+}
+
+/* Estilização para header e footer */
+.cabecalho, .rodape {
+    margin: 1% 32.5%; /* Margem horizontal para centralizar o conteúdo */
+    border-radius: 4px; /* Arredonda bordas */
+    padding: 20px 10px; /* Espaçamento interno para os elementos */
+}
+
+/* Estilização específica para o header */
+.cabecalho {
+    display: flex;
+    justify-content: flex-start; /* Alinha conteúdo do header à esquerda */
+    background-color: var(--azul); /* Cor de fundo do header */
+}
+
+/* Container flex para alinhar main e sidebar na horizontal */
+.conteudo .container {
+    display: flex; /* Define layout flex para organizar elementos */
+    flex-direction: row; /* Organiza main e sidebar lado a lado */
+    gap: 20px; /* Espaçamento entre main e sidebar */
+    margin: 1% 32.5%; /* Margem para centralizar o container na página */
+}
+
+/* Estilização para o main */
+main {
+    background-color: var(--verde-esc); /* Cor de fundo para main */
+    border: none; /* Remove bordas padrão */
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    padding: 10px; /* Espaçamento interno */
+    margin: 0; /* Remove margem adicional */
+    align-items: center; /* Centraliza conteúdo do main verticalmente */
+}
+
+/* Estilização para o título dentro do main */
+#h1-main {
+    padding: 10px; /* Espaçamento interno ao redor do título */
+}
+
+/* Container para os itens dentro do main */
+.itens {
+    display: flex; /* Organiza itens como flexbox */
+    flex-wrap: wrap; /* Permite que itens quebrem linha se necessário */
+    padding: 0; /* Remove espaçamento adicional */
+}
+
+/* Estilização de cada item dentro do main */
+.item {
+    display: flex; /* Define display flex para centralização */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    margin: 10px 7.5px; /* Espaçamento entre itens */
+    background-color: var(--verde); /* Cor de fundo para itens */
+    width: 100px; /* Largura fixa dos itens */
+    height: 70px; /* Altura fixa dos itens */
+}
+
+/* Estilização para a sidebar */
+.sidebar {
+    background-color: var(--rosa); /* Cor de fundo para a sidebar */
+    width: 170px; /* Define largura fixa para sidebar */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    padding: 10px; /* Espaçamento interno */
+}
+
+/* Estilização específica para o footer */
+.rodape {
+    display: flex; /* Define layout flex */
+    justify-content: flex-start; /* Alinha conteúdo do footer à esquerda */
+    background-color: var(--lilas); /* Cor de fundo para o footer */
+}
