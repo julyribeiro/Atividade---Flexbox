@@ -18,7 +18,7 @@
     --verde-esc: #beecbb;
     --rosa: #fbd5e5;
     --lilas: #adbce6;
-    --sombra: #b1b1b133;
+    --sombra: #b1b1b188;
 }
 
 /* Estilização para header e footer */
@@ -26,6 +26,7 @@
     margin: 1% 32.5%; /* Margem horizontal para centralizar o conteúdo */
     border-radius: 4px; /* Arredonda bordas */
     padding: 20px 10px; /* Espaçamento interno para os elementos */
+
 }
 
 /* Estilização específica para o header */
@@ -41,6 +42,12 @@
     flex-direction: row; /* Organiza main e sidebar lado a lado */
     gap: 20px; /* Espaçamento entre main e sidebar */
     margin: 1% 32.5%; /* Margem para centralizar o container na página */
+}
+
+header, main, .sidebar, .rodape{
+    border: 2px;
+    border-style: ;
+    box-shadow: 4px 4px 6px var(--sombra);
 }
 
 /* Estilização para o main */
