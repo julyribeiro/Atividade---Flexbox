@@ -44,11 +44,30 @@
     margin: 1% 32.5%; /* Margem para centralizar o container na página */
 }
 
+/* Bordas nos elementos */
 header, main, .sidebar, .rodape{
     border: 2px;
     border-style: ;
     box-shadow: 4px 4px 6px var(--sombra);
 }
+
+/* Cores para as fontes dos textos dos elementos */
+header{
+    color: rgb(64, 171, 243);
+}
+
+h1.item{
+    color: rgb(52, 209, 52);
+}
+
+.sidebar{
+    color: rgb(196, 74, 155);
+}
+
+.rodape{
+    color: rgb(21, 21, 165);
+}
+
 
 /* Estilização para o main */
 main {
